@@ -1,0 +1,105 @@
+.top-navbar {
+    
+    position: fixed;  /* Fixes the navbar at the top */
+    top: 0;           /* Ensures it's at the very top of the page */     
+    width: 100%;      /* Ensures the navbar spans the full width of the viewport */
+    z-index: 1000;    /* Ensures the navbar stays on top of other content */
+    
+}
+  
+
+
+.side-nav {
+    width: 15%;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    overflow-y: auto;  /* Enables vertical scrolling */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+    position: fixed;
+    scroll-behavior: smooth;  /* Smooth scroll effect */
+    height: 100%;/* Make the side nav take the full height of the viewport */
+}
+
+.side-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.side-nav .nav-link {
+    color: white;  /* Ensure nav links are white */
+}
+
+.side-nav .nav-link:hover {
+    background-color: #171715;
+    color: #e87a1a;  /* Optional: Change color on hover (for example, a lighter blue) */
+}
+
+
+.main-container{
+    background: linear-gradient(to bottom, 
+        #3c8dded1, /* Dark blue shade 1 */
+        #c370a7, /* Dark blue shade 2 */
+        #fa3ee7 );
+        color: white;
+    margin-left:15%;
+    margin-top: 70px;
+    width:auto;
+    overflow-y:auto;
+
+}
+.footer{
+    margin-left:  15%;
+
+}
+.card-img-top{
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.svg-animate {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* After jQuery animation, SVGs will return to their final position with opacity 1 */
+.svg-animate.animate-in {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* Normal button style */
+.btn {
+    background-color: #17395e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+.learn {
+    color: #000e44f6; /* Red-orange color for "Learn" */
+}
+
+.to {
+    color: #16023c; /* Yellow color for "to" */
+}
+
+.code {
+    color: #120054; /* Green color for "Code" */
+}
+.fw-bold{
+    color: #1a2da7;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
