@@ -32,19 +32,31 @@
     color: #e87a1a;  /* Optional: Change color on hover (for example, a lighter blue) */
 }
 
-
-.main-container{
-    background: linear-gradient(to bottom, 
-        #3c8dded1, /* Dark blue shade 1 */
-        #c370a7, /* Dark blue shade 2 */
-        #fa3ee7 );
-        color: white;
+#main-container{
+    
     margin-left:15%;
     margin-top: 70px;
     width:auto;
     overflow-y:auto;
-
+    
 }
+.gradient-background {
+    background: linear-gradient(300deg, #f1f3f4, #4cd8ff41, #211aee4a);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .footer{
     margin-left:  15%;
 
